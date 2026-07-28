@@ -47,7 +47,7 @@
             and bachelor's degree in Construction Management from Chongqing University.
           </p>
           <p>
-            My research interests lie in GeoAI, causal inference, environmental and health geography and 4D (3D space + 1D Time) urban structure. Recently, I am particularly interested in the product and algorithm development to resolve real problems.
+            My research interests lie in GeoAI, Causal Inference, Environmental and Health Geography and 4D (3D space + 1D Time) Urban Structure. Recently, I am particularly interested in the knowledge-based product and algorithm development to reach and resolve real problems.
           </p>
           <p>In my free time, I enjoy playing badminton and hiking.</p>
         </div>
@@ -96,7 +96,7 @@
         </div>
         <div class="contact-card">
           <p><strong>Tel:</strong> +852 5104 9906</p>
-          <p><strong>Email:</strong> zhenchuanyang@cuhk.edu.hk</p>
+          <p><strong>Email:</strong> zhenchuanyang1229@gmail.com</p>
           <p><strong>Address:</strong> Room 210, Fok Ying Tung</p>
           <p>Remote Sensing Science Building,</p>
           <p>The Chinese University of Hong Kong,</p>
@@ -168,31 +168,40 @@
       <h2 class="section-heading no-border" id="publications-heading">
         <span class="heading-text">Publications</span>
         <span class="inline-filters">
-          (<button class="filter-link active" type="button" data-filter="all">show all</button> /
-          <button class="filter-link" type="button" data-filter="article">show articles</button> /
-          <button class="filter-link" type="button" data-filter="presentation">show presentations</button>)
+          (<button class="filter-link active" type="button" data-filter-group="scope" data-filter="all">show all</button> /
+          <button class="filter-link" type="button" data-filter-group="scope" data-filter="selected">show selected</button>)
         </span>
       </h2>
 
       <div class="publication-filters" aria-label="Publication topics">
         <div class="filter-section">
           <span class="filter-label">Year:</span>
-          <span class="filter-links"><a href="#paper-2024">2024</a> / <a href="#paper-2023">2023</a></span>
-        </div>
-        <!-- <div class="filter-section">
-          <span class="filter-label">Current Research Topics:</span>
-          <span class="filter-links"><a href="#topic-health">Environmental &amp; Health Geography</a> / <a href="#topic-justice">Environmental Justice</a></span>
+          <span class="filter-links">
+            <button class="filter-link active" type="button" data-filter-group="year" data-filter="all">all</button> /
+            <button class="filter-link" type="button" data-filter-group="year" data-filter="2026">2026</button> /
+            <button class="filter-link" type="button" data-filter-group="year" data-filter="2025">2025</button> /
+            <button class="filter-link" type="button" data-filter-group="year" data-filter="2024">2024</button> /
+            <button class="filter-link" type="button" data-filter-group="year" data-filter="2023">2023</button> /
+            <button class="filter-link" type="button" data-filter-group="year" data-filter="2021">2021</button>
+          </span>
         </div>
         <div class="filter-section">
-          <span class="filter-label">Methods:</span>
-          <span class="filter-links"><a href="#topic-data">Big Data &amp; Machine Learning</a> / <a href="#topic-data">Network Analysis</a></span>
-        </div> -->
+          <span class="filter-label">Research Topics:</span>
+          <span class="filter-links">
+            <button class="filter-link active" type="button" data-filter-group="topic" data-filter="all">all</button> /
+            <button class="filter-link" type="button" data-filter-group="topic" data-filter="environmental-health-geography">Environmental and Health Geography</button> /
+            <button class="filter-link" type="button" data-filter-group="topic" data-filter="four-d-urban">4D Urban Structure</button> /
+            <button class="filter-link" type="button" data-filter-group="topic" data-filter="low-carbon">Low Carbon City</button> /
+            <button class="filter-link" type="button" data-filter-group="topic" data-filter="geoai">GeoAI</button> /
+            <button class="filter-link" type="button" data-filter-group="topic" data-filter="causal-inference">Causal Inference</button>
+          </span>
+        </div>
       </div>
 
       <div class="publication-list" id="pubs" aria-live="polite">
-        <article class="publication-item" id="paper-2024" data-type="article">
-          <div class="publication-image paper-cover cover-blue" aria-hidden="true">
-            <span>PLOS</span><small>ONE · 2024</small>
+        <article class="publication-item" id="paper-2024-distress-network" data-year="2024" data-topics="environmental-health-geography" data-selected="true">
+          <div class="publication-image publication-figure">
+            <img src="public/paper-2024-distress-network.png" alt="TBD" width="685" height="437" loading="lazy">
           </div>
           <div class="publication-content">
             <h3 class="publication-title">The interplay among individuals’ distress, daily activities, and perceptions of COVID-19 and neighborhood cohesion: A study using network analysis</h3>
@@ -201,14 +210,13 @@
             <div class="publication-links">
               <a href="https://doi.org/10.1371/journal.pone.0293157" target="_blank" rel="noreferrer">Paper</a>
               <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0293157&amp;type=printable" target="_blank" rel="noreferrer">PDF</a>
-              <a href="https://zhenchuanyang.github.io/talks/Paper_1" target="_blank" rel="noreferrer">Abstract</a>
             </div>
           </div>
         </article>
 
-        <article class="publication-item" id="paper-2023" data-type="article">
-          <div class="publication-image paper-cover cover-green" aria-hidden="true">
-            <span>JGB</span><small>18(3) · 2023</small>
+        <article class="publication-item" id="paper-2023-low-carbon-city" data-year="2023" data-topics="low-carbon" data-selected="false">
+          <div class="publication-image publication-figure">
+            <img src="public/paper-2023-low-carbon-city.png" alt="TBD" width="685" height="437" loading="lazy">
           </div>
           <div class="publication-content">
             <h3 class="publication-title">Dual Perspective Diagnosis on Low Carbon City Performance</h3>
@@ -216,24 +224,25 @@
             <p class="publication-venue"><strong>Journal of Green Building</strong> 18(3), 167-184, 2023</p>
             <div class="publication-links">
               <a href="https://doi.org/10.3992/jgb.18.3.167" target="_blank" rel="noreferrer">Paper</a>
-              <a href="https://zhenchuanyang.github.io/talks/Paper_2" target="_blank" rel="noreferrer">Abstract</a>
             </div>
           </div>
         </article>
 
-        <!-- <article class="publication-item" data-type="presentation">
-          <div class="publication-image paper-cover cover-amber" aria-hidden="true">
-            <span>AAG</span><small>ANNUAL · 2023</small>
+        <article class="publication-item" id="conference-2021-chengyu-spatial-economy" data-year="2021" data-topics="" data-selected="true">
+          <div class="publication-image publication-figure">
+            <img src="public/conference-2021-chengyu-spatial-economy.png" alt="Map of county administrative divisions in the Chengyu Urban Agglomeration" width="685" height="437" loading="lazy">
           </div>
           <div class="publication-content">
-            <h3 class="publication-title">Associations between anxiety and depression with daily activity, perception of COVID-19, and perception of neighbourhood during the fifth wave in Hong Kong</h3>
+            <h3 class="publication-title">Identification of Spatial Economic Development Model in Chengyu Urban Agglomeration County by Applying Exploratory Spatial Data Analysis</h3>
             <p class="publication-authors"><span class="author-me">Zhenchuan Yang</span></p>
-            <p class="publication-venue"><strong>AAG Annual Meeting</strong>, Virtual Presentation, 2023</p>
+            <p class="publication-venue"><strong>Proceedings of the 25th International Symposium on Advancement of Construction Management and Real Estate</strong>, Springer, pp. 1059–1071, 2021</p>
             <div class="publication-links">
-              <a href="https://zhenchuanyang.github.io/talks/2023-03-23_Presentation_1" target="_blank" rel="noreferrer">Details</a>
+              <a href="https://doi.org/10.1007/978-981-16-3587-8_70" target="_blank" rel="noreferrer">Paper</a>
             </div>
           </div>
-        </article> -->
+        </article>
+
+
       </div>
 
       <p class="scholar-note">
@@ -242,7 +251,7 @@
       </p>
     </section>
 
-    <section id="topics" aria-labelledby="topics-heading">
+    <!-- <section id="topics" aria-labelledby="topics-heading">
       <h2 class="section-heading" id="topics-heading">Research Interests</h2>
       <div class="two-column-list research-list">
         <ul>
@@ -254,14 +263,12 @@
           <li id="topic-data"><a href="#publications">4D (3D space + 1D Time) urban structure</a></li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <section id="activities" aria-labelledby="activities-heading">
       <h2 class="section-heading" id="activities-heading">Academic Activities</h2>
       <div class="activities-list">
-        <p><span class="activity-date">[01/2024]</span> Research article published in PLOS ONE.</p>
         <p><span class="activity-date">[12/2023]</span> Bronze Award, 9th China International “Internet+” College Students Innovation and Entrepreneurship Competition.</p>
-        <p><span class="activity-date">[09/2023]</span> Research article published in the Journal of Green Building.</p>
         <p><span class="activity-date">[03/2023]</span> Virtual presentation at the AAG Annual Meeting 2023.</p>
       </div>
     </section>

@@ -419,6 +419,7 @@ section {
   border: 0;
   color: var(--color-link-default);
   cursor: pointer;
+  font: inherit;
 }
 
 .filter-link:hover {
@@ -480,6 +481,17 @@ section {
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 4px;
+}
+
+.publication-figure {
+  background: #fff;
+}
+
+.publication-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 .paper-cover {
