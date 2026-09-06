@@ -339,6 +339,11 @@ section {
 
 .news-item {
   margin: 0;
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  column-gap: 0.5rem;
+  align-items: baseline;
+  text-align: left;
   font-size: 0.9375rem;
   line-height: 1.6;
 }
@@ -348,11 +353,14 @@ section {
 }
 
 .news-date {
-  min-width: 5.5rem;
-  margin-right: 0.5rem;
-  display: inline-block;
+  white-space: nowrap;
   color: var(--color-text-secondary);
   font-weight: 700;
+}
+
+.news-content {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .show-more-button {
@@ -747,7 +755,10 @@ section {
     gap: 0.35rem 1rem;
   }
 
-  .news-date,
+  .news-item {
+    grid-template-columns: 5rem minmax(0, 1fr);
+  }
+
   .activity-date {
     min-width: 5rem;
   }
