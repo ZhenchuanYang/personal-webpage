@@ -43,11 +43,36 @@
 
 - Git 和 Git Credential Manager 已安装。
 - 本机已有 `ZhenchuanYang` 的 GitHub 登录账户。
+- 首次连接时检测到保存的登录凭据失效，需要重新登录后才能完成第一次推送。
 - 仓库已有成功的 Pages 自动发布记录，来源分支为 `main`。
 - 核对时，新版在线网页与本地 `index.html` 内容一致。
 - 衔接前的本地版本保存在备份分支 `codex/before-github-connection-20261006`。
 
 备份分支只是首次衔接前的版本记录，后续修改仍在 `main` 中进行。
+
+### 重新登录 GitHub：当前需要你完成的一步
+
+此步骤在 Windows 的 PowerShell 或终端中执行，无需管理员权限。
+
+1. 在开始菜单搜索并打开“PowerShell”。
+2. 粘贴下面这一行，按回车：
+
+   ```powershell
+   git credential-manager github login --username ZhenchuanYang --browser --force
+   ```
+
+3. 如果浏览器打开官方 GitHub 登录或授权页面，使用 `ZhenchuanYang` 账户登录，按页面要求完成两步验证及 Git Credential Manager 的登录授权。
+4. 返回 PowerShell，等待命令结束。不同版本的工具可能显示不同的完成提示；命令返回后可回到 Codex 告知“GitHub 已重新登录”，由 Codex 检查是否真的可以推送。
+5. 如果浏览器没有打开，或命令长时间没有响应，按 `Ctrl + C` 结束该次尝试，再试设备登录：
+
+   ```powershell
+   git credential-manager github login --username ZhenchuanYang --device --force
+   ```
+
+   工具若显示一次性代码和登录地址，在自己的浏览器中打开 <https://github.com/login/device> 并输入该代码，然后完成账户验证。只有工具实际显示代码后，才需要打开设备验证页面。
+6. 如果两种登录方式都失败，把不含密码、令牌或验证码的错误提示告诉 Codex，继续排查连接。
+
+登录成功后，Codex 会推送已准备好的文档及版本衔接，设置并检查跟踪关系，等待对应的 Pages 运行成功。你不用自行重复初始化或上传网页文件。
 
 ## 4. 第一次自己跟着操作：一次本地预览
 
