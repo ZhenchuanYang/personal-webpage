@@ -21,14 +21,14 @@ folder. No install or build step is required.
 
 ## Publish with GitHub Pages
 
-1. Create a GitHub repository and upload the files in this folder.
-2. Open **Settings → Pages** in the repository.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the publishing branch (normally `main`) and the `/ (root)` folder.
-5. Save. GitHub will publish the site after the deployment completes.
+- Repository: [ZhenchuanYang/personal-webpage](https://github.com/ZhenchuanYang/personal-webpage)
+- Live site: [Academic homepage](https://zhenchuanyang.github.io/personal-webpage/)
+- Publishing branch: `main`; source folder: `/ (root)`.
+- Push updates to `main` and GitHub Pages publishes them automatically.
+- This project does not require an installation or build step.
 
-For a personal address such as `https://username.github.io/`, name the
-repository `username.github.io`.
+See [the Chinese publishing guide](PUBLISHING.zh-CN.md) for setup, daily
+updates, deployment verification, and troubleshooting.
 
 ## Updating content
 
